@@ -1,6 +1,6 @@
 #  Resume #
 ## About me ##
-![My photo](https://raw.githubusercontent.com/Holanad/rsschool-cv/gh-pages/avatar.jpg)
+![My photo](https://raw.githubusercontent.com/Holanad/rsschool-cv/gh-pages/assets/img/avatar.jpg)
 <br/>
 **Name:** Vladislav Volkov
 <br/>
@@ -97,12 +97,13 @@ Adaptive layout / Boarding on MODX
 <br>
 [https://academium-ivf.net](https://academium-ivf.net)
 ## Education ##
-2021 - **RS School JS Stage#0:** [Certificate](https://app.rs.school/certificate/fzl3zeh5)
+2022 - **RS School JS Stage#1:** Now
 <br/>
 <br/>
 2021 - **RS School JS Stage#0:** [Certificate](https://app.rs.school/certificate/fzl3zeh5)
+<br/>
 2021 - **Belarusian-Russian University (Internet technologies):** [Certificate](/)
 <br/>
 <br/>
-2020 - **WEBDEV SUMMIT:** [Certificate](webdevsummit.png)
+2020 - **WEBDEV SUMMIT:** [Certificate](assets/img/webdevsummit.png)
 
