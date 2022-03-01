@@ -324,4 +324,19 @@
             }
         }
     }
+    .footer {
+        &__link {
+            img {
+                width: 25px;
+            }
+            &:last-child {
+                img {
+                    width: 50px;
+                }
+            }
+        }
+        &__years {
+            font-size: 14px;
+        }
+    }
 }

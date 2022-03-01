@@ -283,5 +283,14 @@
     text-align: center;
     margin-top: 15px;
   }
+  .footer__link img {
+    width: 25px;
+  }
+  .footer__link:last-child img {
+    width: 50px;
+  }
+  .footer__years {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=media.css.map */
