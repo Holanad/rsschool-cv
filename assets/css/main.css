@@ -230,6 +230,10 @@ h1, h2, h3, h4, p, a, button, span, input, li, blockquote {
   line-height: 167.5%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
 blockquote {
   margin: 0;
   background: #171718;
@@ -268,11 +272,12 @@ blockquote {
   background: #20B0A8;
   font-family: 'Roboto Bold';
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 22px;
   line-height: 120%;
-  padding: 10px 30px;
+  padding: 8px 30px;
   position: relative;
   text-align: center;
+  margin-bottom: 45px;
 }
 
 .s-title::before {
@@ -465,6 +470,8 @@ blockquote {
   background-color: #C4C4C4;
   margin-right: 10px;
   position: relative;
+  -webkit-transition: all ease-in .3s;
+  transition: all ease-in .3s;
 }
 
 .saidbar-block-lang-inner .saidbar-block-lang__progress::before {
@@ -475,6 +482,11 @@ blockquote {
   background: #20B0A8;
   height: 100%;
   border-radius: 5px;
+}
+
+.saidbar-block-lang-inner .saidbar-block-lang__progress:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .saidbar-block .saidbar-list__item {
@@ -503,6 +515,89 @@ main {
   -webkit-animation: mainAnim 0.5s ease-in 0.5s forwards;
           animation: mainAnim 0.5s ease-in 0.5s forwards;
   opacity: 0;
+}
+
+main .profile {
+  margin-bottom: 30px;
+}
+
+main .profile__descr {
+  font-size: 16px;
+}
+
+main .skills {
+  margin-bottom: 5px;
+}
+
+main .skills-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .skills-list .skills-item {
+  width: 48%;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+
+main .skills-list .skills-item::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 25px;
+  height: 15px;
+  background: #20B0A8;
+  border-radius: 100px;
+}
+
+main .skills-list .skills-item__title {
+  font-size: 20px;
+  line-height: 120%;
+  font-family: 'Roboto Bold';
+  margin-bottom: 8px;
+}
+
+main .skills-list .skills-item-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .skills-list .skills-item-block__item {
+  cursor: default;
+  font-family: 'Roboto Medium';
+  font-size: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px 14px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background: #363B60;
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+main .skills-list .skills-item-block__item:last-child {
+  margin-right: 0;
+}
+
+main .skills-list .skills-item-block__item:hover {
+  background: #20B0A8;
+}
+
+main .education-list {
+  margin-bottom: 30px;
 }
 
 .footer {

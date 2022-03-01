@@ -18,6 +18,9 @@ h1, h2, h3, h4, p, a, button, span, input, li, blockquote {
     font-size: 14px;
     line-height: 167.5%;
 }
+h1, h2, h3, h4,h5, h6 {
+    font-weight: normal;
+}
 blockquote {
     margin: 0;
     background: #171718;
@@ -52,11 +55,12 @@ blockquote {
     background:#20B0A8;
     font-family: 'Roboto Bold';
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 22px;
     line-height: 120%;
-    padding: 10px 30px;
+    padding: 8px 30px;
     position: relative;
     text-align: center;
+    margin-bottom: 45px;
     &::before {
         content: '';
         position: absolute;
@@ -169,6 +173,7 @@ blockquote {
                             &::before {
                                 animation: langFirst 1.5s ease-out 1.3s forwards;
                             }
+
                         }
                     }
                 }
@@ -212,6 +217,7 @@ blockquote {
                     background-color: #C4C4C4;
                     margin-right: 10px;
                     position: relative;
+                    transition: all ease-in .3s;
                     &::before {
                         content: '';
                         position: absolute;
@@ -220,6 +226,9 @@ blockquote {
                         background: #20B0A8;
                         height: 100%;
                         border-radius: 5px;
+                    }
+                    &:hover {
+                        transform: scale(1.02);
                     }
                 }
             }
@@ -252,7 +261,70 @@ main {
     opacity: 0;
     
     .profile {
+        margin-bottom: 30px;
+        &__descr {
+            font-size: 16px;
+        }
+    }
+    .skills {
+        margin-bottom: 5px;
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            .skills-item {
+                width: 48%;
+                position: relative;
+                padding-left: 40px;
+                margin-bottom: 10px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+                    width: 25px;
+                    height: 15px;
+                    background: #20B0A8;
+                    border-radius: 100px;
+                }
+                &__title {
+                    font-size: 20px;
+                    line-height: 120%;
+                    font-family: 'Roboto Bold';
+                    margin-bottom: 8px;
+                }
+                &-block {
+                    display: flex;
+                    flex-wrap: wrap;
+                    &__item {
+                        cursor: default;
+                        font-family: 'Roboto Medium';
+                        font-size: 16px;
+                        width: fit-content;
+                        padding: 3px 14px;
+                        margin-right: 15px;
+                        margin-bottom: 15px;
+                        background: #363B60;
+                        box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 2px;
+                        transition: all .3s linear;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        &:hover {
+                            background: #20B0A8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .education {
+        &-list {
+            margin-bottom: 30px;
+            .education-item {
 
+            }
+        }
     }
 }
 .footer {
@@ -277,7 +349,7 @@ main {
     }
 }
 
-
+// Animations
 @keyframes saidbarAvatar {
     0% {
         background-position-y: 330px;
