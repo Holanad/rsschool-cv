@@ -756,6 +756,7 @@ main .experience-project-item .experience-project-block {
 main .experience-project-item .experience-project-block iframe {
   width: 300px;
   height: 200px;
+  border: none;
 }
 
 main .experience-project-item .experience-project-block__text {
