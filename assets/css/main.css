@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Roboto Regular';
   src: url("../fonts/Roboto-Regular.eot");
@@ -221,6 +222,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-shadow: 20px 0px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 20px 0px 25px rgba(0, 0, 0, 0.25);
 }
 
 h1, h2, h3, h4, p, a, button, span, input, li, blockquote {
@@ -315,6 +318,24 @@ blockquote {
   opacity: 0;
   -webkit-box-shadow: 20px 0px 25px rgba(0, 0, 0, 0.25), -20px 0px 25px rgba(0, 0, 0, 0.25);
           box-shadow: 20px 0px 25px rgba(0, 0, 0, 0.25), -20px 0px 25px rgba(0, 0, 0, 0.25);
+}
+
+.saidbar-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #20B0A8;
+  border: 1px solid #20B0A8;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 15px;
+  margin: 0 auto;
+  font-family: 'Roboto Medium';
+}
+
+.saidbar-btn:hover {
+  background: transparent;
 }
 
 .saidbar .header {
@@ -535,6 +556,9 @@ main .skills-list {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main .skills-list .skills-item {
@@ -596,8 +620,194 @@ main .skills-list .skills-item-block__item:hover {
   background: #20B0A8;
 }
 
-main .education-list {
+main .education-list, main .experience-list {
   margin-bottom: 30px;
+}
+
+main .education-list .education-item, main .education-list .experience-item, main .experience-list .education-item, main .experience-list .experience-item {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+main .education-list .education-item:last-child, main .education-list .experience-item:last-child, main .experience-list .education-item:last-child, main .experience-list .experience-item:last-child {
+  margin-bottom: 0;
+}
+
+main .education-list .education-item::before, main .education-list .experience-item::before, main .experience-list .education-item::before, main .experience-list .experience-item::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 25px;
+  height: 15px;
+  background: #20B0A8;
+  border-radius: 100px;
+}
+
+main .education-list .education-item-header-line, main .education-list .experience-item-header-line, main .experience-list .education-item-header-line, main .experience-list .experience-item-header-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .education-list .education-item-header-line:first-child, main .education-list .experience-item-header-line:first-child, main .experience-list .education-item-header-line:first-child, main .experience-list .experience-item-header-line:first-child {
+  margin-bottom: 5px;
+}
+
+main .education-list .education-item-header__title, main .education-list .experience-item-header__title, main .experience-list .education-item-header__title, main .experience-list .experience-item-header__title {
+  font-size: 20px;
+  line-height: 120%;
+  font-family: 'Roboto Bold';
+  max-width: 300px;
+}
+
+main .education-list .education-item-header__text, main .education-list .experience-item-header__text, main .experience-list .education-item-header__text, main .experience-list .experience-item-header__text {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+main .education-list .education-item-header__text.education-item-header__text_orange, main .education-list .education-item-header__text.experience-item-header__text_orange, main .education-list .experience-item-header__text.education-item-header__text_orange, main .education-list .experience-item-header__text.experience-item-header__text_orange, main .experience-list .education-item-header__text.education-item-header__text_orange, main .experience-list .education-item-header__text.experience-item-header__text_orange, main .experience-list .experience-item-header__text.education-item-header__text_orange, main .experience-list .experience-item-header__text.experience-item-header__text_orange {
+  color: #FB9D24;
+  max-width: 400px;
+}
+
+main .education-list .education-item-header span.education-item-header__text, main .education-list .education-item-header span.experience-item-header__text, main .education-list .experience-item-header span.education-item-header__text, main .education-list .experience-item-header span.experience-item-header__text, main .experience-list .education-item-header span.education-item-header__text, main .experience-list .education-item-header span.experience-item-header__text, main .experience-list .experience-item-header span.education-item-header__text, main .experience-list .experience-item-header span.experience-item-header__text {
+  max-width: 270px;
+  text-align: right;
+}
+
+main .education-list .education-item-header a.education-item-header__text, main .education-list .experience-item-header a.education-item-header__text, main .experience-list .education-item-header a.education-item-header__text, main .experience-list .experience-item-header a.education-item-header__text {
+  border-bottom: 1px solid #FB9D24;
+}
+
+main .education-list .education-item__descr, main .education-list .experience-item__descr, main .experience-list .education-item__descr, main .experience-list .experience-item__descr {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+main .experience {
+  margin-bottom: 30px;
+}
+
+main .experience-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  width: calc(100% + 120px);
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+  padding-bottom: 20px;
+}
+
+main .experience-project::-webkit-scrollbar {
+  height: 16px;
+  margin: 0 60px;
+}
+
+main .experience-project::-webkit-scrollbar-track {
+  background: #363B60;
+  /* цвет дорожки */
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 60px;
+  border-radius: 20px;
+}
+
+main .experience-project::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  /* закругления плашки */
+  background: #20B0A8;
+  /* padding вокруг плашки */
+  margin: 0 60px;
+}
+
+main .experience-project-item {
+  margin: 0 20px;
+}
+
+main .experience-project-item:first-child {
+  margin-left: 60px;
+}
+
+main .experience-project-item:last-child {
+  margin-right: 60px;
+}
+
+main .experience-project-item .experience-project-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+main .experience-project-item .experience-project-block iframe {
+  width: 300px;
+  height: 200px;
+}
+
+main .experience-project-item .experience-project-block__text {
+  background: #20B0A8;
+  padding: 7px 0;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Roboto Medium';
+}
+
+main .experience-project-item .experience-project-link {
+  font-size: 18px;
+  font-family: 'Roboto Medium';
+  border-bottom: 1px solid #20B0A8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+main .experience-text__text {
+  font-family: 'Roboto Medium';
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 167.5%;
+  text-align: center;
+}
+
+main .experience-text__link {
+  font-family: 'Roboto Medium';
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 120%;
+  color: #20B0A8;
+  border-bottom: 1px solid #20B0A8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .footer {
