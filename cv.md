@@ -97,7 +97,7 @@ Adaptive layout / Boarding on MODX
 <br>
 [https://academium-ivf.net](https://academium-ivf.net)
 ## Education ##
-2022 - **RS School JS Stage#1:** Now
+2026 - **RS School JS Stage#1:** Now
 <br/>
 <br/>
 2021 - **RS School JS Stage#0:** [Certificate](https://app.rs.school/certificate/fzl3zeh5)
